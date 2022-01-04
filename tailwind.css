@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+    .header-section {
+        @apply w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2
+    }
+    .hello {
+        @apply text-3xl font-bold text-red-600;
+    }
+}
