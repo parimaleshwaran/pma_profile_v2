@@ -1,3 +1,58 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.scroll-bar::-webkit-scrollbar {
+    width: 2px;
+    height: 2px;
+}
+
+/* Track */
+.scroll-bar::-webkit-scrollbar-track {
+    border-radius: 100vh;
+    background: #d90a2c;
+}
+
+/* Handle */
+.scroll-bar::-webkit-scrollbar-thumb {
+    background: #d90a2c;
+    border-radius: 100vh;
+    border: 3px solid #d90a2c;
+}
+
+/* Handle on hover */
+.scroll-bar::-webkit-scrollbar-thumb:hover {
+    background: #d90a2c;
+}
+.tooltip {
+    position: relative;
+}
+.tooltiptext {
+    visibility: hidden;
+    /* width: 120px; */
+    background-color: white;
+    color: #101d2a;
+    text-align: center;
+    border-radius: 8px;
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+    bottom: 53%;
+    left: 50%;
+    margin-left: -48px;
+}
+
+.tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
