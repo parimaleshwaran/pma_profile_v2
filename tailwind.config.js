@@ -12,7 +12,9 @@ module.exports = {
       textColor: (theme) => theme('colors'),
       textColor: {
         gray: {
-          dark: '#bbbbbb'
+          dark: '#bbbbbb',
+          light: '#c5c5c6',
+          you: '#6a696c'
         },
         red: {
           dark: '#ff0000'
@@ -23,7 +25,10 @@ module.exports = {
         pink: {
           dark: '#e3507a',
           marine: '#50e3c2',
-        }
+        },
+        blue: {
+          dark: '#59588d',
+        },
       },
       backgroundColor: (theme) => ({
         ...theme('colors'),
@@ -34,10 +39,17 @@ module.exports = {
         red: '#d90a2c',
         bla: '#1a191d',
         ref: 'rgba(255, 255, 255, 0.05)',
-        gri: '#c4c4c4'
+        gri: '#c4c4c4',
+        name: '#262529',
+        foo: '#25232b',
+        play: 'rgba(0, 0, 0, 0.5)'
       }),
       backgroundImage: {
         'hero': "linear-gradient(13deg, #000 3%, rgba(0, 0, 0, 0) 206%);",
+      },
+      boxShadow: {
+        fg: '0 0 9px 2px rgba(201, 224, 255, 0.1);',
+        hj: ' 0 0 50px 0 rgba(0, 0, 0, 0.5);',
       },
       gridTemplateColumns: {
         16: 'auto auto auto auto',
@@ -71,7 +83,17 @@ module.exports = {
         tr: '7px',
         bh: '36px',
         lo: '55px',
-        ds: '130px'
+        ds: '130px',
+        vb: '99px',
+        ti: '140px',
+        to: '150px',
+        uo: '47px',
+        tg: '22px',
+        zc: '100px',
+        za: '77px',
+        jf: '30px',
+        hi: '109px',
+        qw: '34.4px'
       },
       margin: {
         gh: '138px',
@@ -83,13 +105,20 @@ module.exports = {
         21: '50px',
         23: '46px',
         25: '150%',
+        27: '43px',
+        tg: '22px',
       },
       width: {
         jj: '15.4px',
         gh: '267.1px',
         gj: '455px',
         op: '18px',
-        df: '8%'
+        df: '7%',
+        ds: '308px',
+        ft: '122px',
+        kj: '377px',
+        po: '78px',
+        iu: '300px'
       },
       borderWidth: {
         DEFAULT: '1px',
@@ -100,6 +129,8 @@ module.exports = {
         hj: '52px',
         io: '18px',
         ui: '90%',
+        po: '78px'
+
       },
       borderRadius: {
         kl: '5px',
@@ -109,10 +140,15 @@ module.exports = {
         su: '38px',
         gh: '48px',
         jh: '11px',
-        fg: '17px'
+        fg: '17px',
+        kl: '10px',
+        ju: '14px'
       },
       colors: {
-        'blue': '#00c2ff',
+        blue: '#00c2ff',
+        gray: '#37353d',
+        blu: '#312f62',
+        or: '#2f2d33',
       },
       gradientColorStops: (theme) => ({
         ...theme('colors'),
