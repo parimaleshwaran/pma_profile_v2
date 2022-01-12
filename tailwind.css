@@ -2,54 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.scroll-bar::-webkit-scrollbar {
-    width: 2px;
-    height: 2px;
-}
-
-/* Track */
-.scroll-bar::-webkit-scrollbar-track {
-    border-radius: 100vh;
-    background: #d90a2c;
-}
-
-/* Handle */
-.scroll-bar::-webkit-scrollbar-thumb {
-    background: #d90a2c;
-    border-radius: 100vh;
-    border: 3px solid #d90a2c;
-}
-
-/* Handle on hover */
-.scroll-bar::-webkit-scrollbar-thumb:hover {
-    background: #d90a2c;
-}
-.tooltip {
-    position: relative;
-}
-.tooltiptext {
-    visibility: hidden;
-    /* width: 120px; */
-    background-color: white;
-    color: #101d2a;
-    text-align: center;
-    border-radius: 8px;
-    padding: 10px;
-    position: absolute;
-    z-index: 1;
-    bottom: 53%;
-    left: 50%;
-    margin-left: -48px;
-}
-
 .tooltiptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 10px;
-    border-style: solid;
     border-color: white transparent transparent transparent;
 }
 
@@ -57,32 +10,7 @@
     visibility: visible;
 }
 
-.facebook {
-    position: relative;
-}
-.facebooktext {
-    visibility: hidden;
-    /* width: 120px; */
-    background-color: white;
-    color: #101d2a;
-    text-align: center;
-    border-radius: 8px;
-    padding: 10px;
-    position: absolute;
-    z-index: 1;
-    bottom: 113%;
-    left: 50%;
-    margin-left: -48px;
-}
-
 .facebooktext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 10px;
-    border-style: solid;
     border-color: white transparent transparent transparent;
 }
 
@@ -90,35 +18,7 @@
     visibility: visible;
 }
 
-.commontool {
-    position: relative;
-}
-
-.commontooltext {
-    visibility: hidden;
-    width: 120px;
-    background-color: #222222;
-    color: #fff;
-    text-align: center;
-    border-radius: 3px;
-    padding: 6px 0;
-    position: absolute;
-    z-index: 1;
-    top: 120%;
-    font-size: 12px;
-    left: 94%;
-    margin-left: -60px;
-    font-weight: 600;
-}
-
 .commontooltext::after {
-    content: "";
-    position: absolute;
-    bottom: 100%;
-    left: 21%;
-    margin-left: -5px;
-    border-width: 6px;
-    border-style: solid;
     border-color: transparent transparent #222222 transparent;
 }
 
@@ -126,35 +26,7 @@
     visibility: visible;
 }
 
-.booktool {
-    position: relative;
-}
-
-.booktooltext {
-    visibility: hidden;
-    width: 120px;
-    background-color: #222222;
-    color: #fff;
-    text-align: center;
-    border-radius: 3px;
-    padding: 6px 0;
-    position: absolute;
-    z-index: 1;
-    top: 104%;
-    font-size: 12px;
-    left: 94%;
-    margin-left: -60px;
-    font-weight: 600;
-}
-
 .booktooltext::after {
-    content: "";
-    position: absolute;
-    bottom: 100%;
-    left: 21%;
-    margin-left: -5px;
-    border-width: 6px;
-    border-style: solid;
     border-color: transparent transparent #222222 transparent;
 }
 
@@ -162,35 +34,7 @@
     visibility: visible;
 }
 
-.profiletool {
-    position: relative;
-}
-
-.profiletext {
-    visibility: hidden;
-    width: 120px;
-    background-color: #fff;
-    color: #373737;
-    text-align: center;
-    border-radius: 3px;
-    padding: 6px 0;
-    position: absolute;
-    z-index: 1;
-    top: 125%;
-    font-size: 12px;
-    left: 94%;
-    margin-left: -60px;
-    font-weight: 600;
-}
-
 .profiletext::after {
-    content: "";
-    position: absolute;
-    bottom: 100%;
-    left: 21%;
-    margin-left: -5px;
-    border-width: 6px;
-    border-style: solid;
     border-color: transparent transparent #fff transparent;
 }
 
@@ -198,39 +42,35 @@
     visibility: visible;
 }
 
-.verifedtool {
-    position: relative;
-}
-
-.verifedtext {
-    visibility: hidden;
-    width: 120px;
-    background-color: #fff;
-    color: #373737;
-    text-align: center;
-    border-radius: 3px;
-    padding: 6px 0;
-    position: absolute;
-    z-index: 1;
-    top: 105%;
-    font-size: 12px;
-    left: 110%;
-    margin-left: -60px;
-    font-weight: 600;
-}
-
 .verifedtext::after {
-    content: "";
-    position: absolute;
-    bottom: 100%;
-    left: 21%;
-    margin-left: -5px;
-    border-width: 6px;
-    border-style: solid;
     border-color: transparent transparent #fff transparent;
 }
 
 .verifedtool:hover .verifedtext {
+    visibility: visible;
+}
+
+.hidetooltext::after {
+    border-color: transparent transparent #222222 transparent;
+}
+
+.hidetool:hover .hidetooltext {
+    visibility: visible;
+}
+
+.adtooltext::after {
+    border-color: transparent transparent #222222 transparent;
+}
+
+.adtool:hover .adtooltext {
+    visibility: visible;
+}
+
+.preadtooltext::after {
+    border-color: transparent transparent #222222 transparent;
+}
+
+.preadtool:hover .preadtooltext {
     visibility: visible;
 }
 
@@ -247,4 +87,38 @@
 }
 .edit {
     display: none;
+}
+
+.question-text {
+    transition: 0.8s all ease;
+    transition-delay: 0s;
+}
+.question-text::after {
+    border-color: transparent white transparent transparent;
+}
+.question:hover .question-text {
+    visibility: visible;
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+    height: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    border-radius: 100vh;
+    background: #1a191d;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #1a191d;
+    border-radius: 100vh;
+    border: 3px solid #1a191d;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #1a191d;
 }
