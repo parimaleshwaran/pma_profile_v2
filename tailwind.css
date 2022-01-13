@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .tooltiptext::after {
-    border-color: white transparent transparent transparent;
+    border-color: transparent transparent transparent white;
 }
 
 .tooltip:hover .tooltiptext {

@@ -69,9 +69,11 @@ module.exports = {
       gridTemplateColumns: {
         16: 'auto auto auto auto',
         17: '426px auto auto',
+        15: '212px auto auto'
       },
       gridTemplateRows: {
         17: '140px 80px 45px',
+        15: '119px 64px 112px'
       },
       gap: {
         '11': '30px',
@@ -121,6 +123,7 @@ module.exports = {
         df: '70px',
         ui: '5px',
         qw: '-60px',
+        wq: '-19px'
       },
       inset: {
         21: '50px',
@@ -141,7 +144,9 @@ module.exports = {
         yt: '53%',
         yq: '140%',
         al: '86%',
-        rt: '55%'
+        rt: '55%',
+        rw: '28%',
+        ya: '60px'
       },
       width: {
         jj: '15.4px',
