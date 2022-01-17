@@ -18,9 +18,13 @@ module.exports = {
           ques: '#5f6368',
           veri: '#373737',
           fb: '#101d2a',
+          add: '#62636a',
+          book: '#4a4b52',
+          vlog: '#858585'
         },
         red: {
-          dark: '#ff0000'
+          dark: '#ff0000',
+          light: '#d90a2c',
         },
         green: {
           dark: '#31d041'
@@ -31,6 +35,7 @@ module.exports = {
         },
         blue: {
           dark: '#59588d',
+          away: '#0064e0'
         },
       },
       backgroundColor: (theme) => ({
@@ -50,7 +55,10 @@ module.exports = {
         click: '#222222',
         arrow: '#313131',
         add: '#f4f4f4',
-        card: '#fafafa'
+        card: '#fafafa',
+        away: '#ffdd55',
+        hed: 'rgba(255, 221, 85, 0.43)',
+        res: 'rgba(0, 0, 0, 0.6)',
       }),
       backgroundImage: {
         hero: "linear-gradient(13deg, #000 3%, rgba(0, 0, 0, 0) 206%);",
@@ -115,7 +123,11 @@ module.exports = {
         wl: '20.4px',
         wh: '23px',
         hj: '26px',
-        ji: '74.4px'
+        ji: '74.4px',
+        rf: '27px',
+        lj: '72px',
+        tc: '60px',
+        tl: '105px'
       },
       margin: {
         gh: '138px',
@@ -123,7 +135,8 @@ module.exports = {
         df: '70px',
         ui: '5px',
         qw: '-60px',
-        wq: '-19px'
+        wq: '-19px',
+        ql: '100px'
       },
       inset: {
         21: '50px',
@@ -161,7 +174,10 @@ module.exports = {
         iu: '300px',
         wi: '227px',
         we: '120px',
-        wk: '184.4px'
+        wk: '184.4px',
+        rt: '295px',
+        im: '100px',
+        fd: '226px'
       },
       borderWidth: {
         DEFAULT: '1px',
@@ -189,7 +205,9 @@ module.exports = {
         jh: '11px',
         fg: '17px',
         kl: '10px',
-        ju: '14px'
+        ju: '14px',
+        ds: '16px',
+        yu: '20px'
       },
       colors: {
         blue: '#00c2ff',
@@ -200,7 +218,9 @@ module.exports = {
       },
       maxWidth: {
         sa: '182px',
-        df: '432px'
+        df: '432px',
+        re: '9rem',
+        sv: '10rem'
       },
       gradientColorStops: (theme) => ({
         ...theme('colors'),

@@ -19,10 +19,17 @@
   <section class="md:bg-black">
     <div class="w-full">
       <div
-        class="bg-transparent xl:max-w-7xl lg:max-w-5xl md:max-w-2xl m-auto relative mt-0 mr-auto pt-4 w-full left-0 right-0 bottom-0 top-0 z-10">
+        class="bg-transparent xl:max-w-7xl lg:max-w-5xl md:max-w-2xl m-auto relative mt-0 mr-auto pt-4 w-full left-0 right-0 bottom-0 top-0 z-10 xl:px-0 lg:px-0 md:px-0 px-tg">
         <div class="flex justify-start items-start h-auto relative mt-0">
           <img class="mr-auto" src="/images/pickmyad_logo.svg">
-          <div class="inline-block rounded-full bg-avai flex pl-3">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 xl:hidden lg:hidden md:hidden" viewBox="0 0 20 20"
+            fill="white">
+            <path fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd" />
+          </svg>
+          <div
+            class="hidden xl:inline-block lg:inline-block md:inline-block rounded-full bg-avai xl:flex md:flex lg:flex pl-3">
             <span class="text-xs font-normal text-green-dark pr-2 pt-1 font-serif">Available for booking</span>
             <div class="bg-circle w-6 h-6 block rounded-full">
               <div class="bg-green w-jj h-jk block rounded-full mt-1 items-center text-center mx-auto"></div>
@@ -31,7 +38,7 @@
         </div>
       </div>
       <div class="mt-0 mr-auto">
-        <div class="relative mb-0 pt-st py-sy pr-10">
+        <div class="relative xl:mb-0 xl:pt-st lg:pt-st md:pt-st xl:py-sy md:py-sy lg:py-sy xl:pr-10 md:pr-10 lg:pr-10">
           <div class="absolute -top-20 left-0 right-0 bottom-0 overflow-hidden z-0">
             <div class="bottom-0 absolute top-0 right-0 left-0">
               <img class="w-full h-full" src="/images/unsplash.png">
@@ -40,19 +47,42 @@
             </div>
           </div>
           <div
-            class="md:flex relative w-full mr-auto pr-0 z-10 text-white xl:max-w-7xl lg:max-w-5xl md:max-w-2xl mx-auto">
-            <img class="" src="/images/profile.png">
-            <div class="pt-6 md:p-8 text-center md:text-left">
-              <div class="flex verifedtool relative">
-                <p class="text-su font-semibold leading-normal text-white truncate max-w-df">
-                  Mr.Whosetheboss </p>
-                <img src="/images/ic_baseline-verified.svg" class="ml-2.5 mt-2">
+            class="md:flex relative w-full mr-auto z-10 text-white xl:max-w-7xl lg:max-w-5xl md:max-w-2xl mx-auto xl:top-0 md:top-0 lg:top-0 top-32 xl:px-0 lg:px-0 md:px-0 px-tg">
+            <div id="myBtn" class="xl:hidden md:hidden lg:hidden bg-hed w-6 h-6 block rounded-full float-right">
+              <div class="bg-away w-jj h-jk block rounded-full mt-1 items-center text-center mx-auto"></div>
+            </div>
+            <div id="myModal" class="modal fixed pt-12 left-0 right-0 top-0 w-full h-full overflow-auto bg-res pl-14">
+              <div class="bg-white p-2.5 m-auto rounded-sm w-fd">
+                <span class="close"></span>
+                <div class="flex">
+                  <span
+                    class="bg-away rounded-full w-op h-io p-1 text-white text-sm text-center mt-0.5 leading-3">?</span>
+                  <h1 class="text-sm text-black font-normal pl-1.5">Away</h1>
+                </div>
+                <p class="pt-4 text-xs text-gray-ques font-normal">Currently not accepting any bookings, comeback and
+                  check
+                  later. <a href="#"><span class="text-xs text-blue-away font-normal">Click here
+                    </span></a> to notify once the user
+                  get back to business</p>
+                <span class="text-sm font-semibold text-red-light pt-wy m-auto table">Okay</span>
+              </div>
+            </div>
+            <img src="/images/profile.png"
+              class="xl:m-0 lg:m-0 md:m-0 m-auto xl:w-auto xl:w-auto lg:w-auto md:w-auto w-im">
+            <div class="xl:pt-6 pt-yk lg:pt-6 md:pt-6 md:p-8 text-center md:text-left">
+              <div class="flex verifedtool relative justify-center">
+                <p
+                  class="xl:text-su lg:text-su md:text-su text-yu xl:font-semibold lg:font-semibold md:font-semibold font-normal leading-normal xl:text-white md:text-white lg:text-white text-black truncate xl:max-w-df md:max-w-df lg:max-w-df max-w-sv">
+                  Mr.Whosetheboss</p>
+                <img src="/images/ic_baseline-verified.svg" class="ml-2.5 mt-2 hidden xl:block md:block lg:block">
+                <img src="/images/verified-black.svg" class="ml-2.5 mt-px xl:hidden md:hidden lg:hidden block">
                 <span
-                  class="verifedtext px-2.5 after:absolute after:bottom-full after:border-solid after:left-ag after:-ml-ui after:border-13 bg-white invisible text-gray-veri text-center text-xs font-semibold absolute z-10 rounded-hu w-max p-1.5 ml-qw top-az left-ac">Verified
+                  class="hidden md:block verifedtext px-2.5 after:absolute after:bottom-full after:border-solid after:left-ag after:-ml-ui after:border-13 bg-white invisible text-gray-veri text-center text-xs font-semibold absolute z-10 rounded-hu w-max p-1.5 ml-qw top-az left-ac">Verified
                   Account</span>
               </div>
               <figcaption>
-                <div class="text-base font-normal leading-normal text-gray-dark">
+                <div
+                  class="xl:text-base lg:text-base md:text-base text-sm font-normal leading-normal xl:text-gray-dark md:text-gray-dark lg:text-gray-dark text-gray-vlog">
                   Vlog | Tech Review </div>
                 <div class="flex pt-3.5">
                   <a href="#">
@@ -100,71 +130,105 @@
             Click to hide</span>
         </div>
       </div>
-      <div class="bg-add">
-        <div class="xl:max-w-7xl lg:max-w-5xl md:max-w-2xl m-auto relative pt-sq">
-          <h1 class="text-black font-semibold text-2xl"> <span class="h-1 border-b-4 border-red">Ava</span>ilable Ads
-          </h1>
-          <div class="grid xl:grid-cols-6 lg:grid-cols-5 md:grid-cols-3 gap-3 max-w-max pt-hj pb-ji">
-            <div class="preadtool bg-card rounded-kl hover:shadow-ff w-wk pt-wy pb-wh pl-wl">
+      <div class="xl:bg-add lg:bg-add md:bg-add bg-white xl:mt-0 md:mt-0 lg:mt-0 mt-ql">
+        <div class="xl:max-w-7xl lg:max-w-5xl md:max-w-2xl m-auto relative pt-sq xl:px-0 md:px-0 lg:px-0 px-tg">
+          <div class="xl:block md:block lg:block flex">
+            <h1
+              class="text-black xl:font-semibold lg:font-semibold md:font-semibold font-normal xl:text-2xl lg:text-2xl md:text-2xl text-base">
+              <span class="h-1 xl:border-b-4 md:border-b-4 lg:border-b-4 border-red">Ava</span>ilable Ads
+            </h1>
+            <p class="xl:hidden md:hidden lg:hidden text-xs text-gray-book ml-auto">(<span
+                class="border-b-4 border-red">Boo</span>k Now)</p>
+          </div>
+          <div
+            class="grid xl:grid-cols-6 lg:grid-cols-5 md:grid-cols-3 grid-cols-4 gap-3 max-w-max pt-hj xl:pb-ji lg:pb-ji md:pb-ji">
+            <div
+              class="preadtool xl:bg-card md:bg-card lg:bg-card rounded-kl hover:shadow-ff xl:w-wk md:w-wk lg:w-wk w-auto pt-wy xl:pb-wh lg:pb-wh md:pb-wh xl:pl-wl lg:pl-wl md:pl-wl">
               <img src="/images/icon_intro_video.svg">
-              <p class="text-black font-semibold text-base pt-wy">Indro Video</p>
+              <p
+                class="xl:text-black lg:text-black md:text-black text-gray-add font-semibold xl:text-base xl:text-base lg:text-base md:text-base text-kl pt-wy">
+                Indro Video</p>
               <span
-                class="preadtooltext px-2.5 after:absolute after:bottom-full after:border-solid after:left-ag after:-ml-ui after:border-13 after:left-ag bg-click invisible text-white top-rt text-center text-xs font-semibold absolute z-10 rounded-hu w-max p-1.5 ml-df">
+                class="hidden xl:block lg:block md:block preadtooltext px-2.5 after:absolute after:bottom-full after:border-solid after:left-ag after:-ml-ui after:border-13 after:left-ag bg-click invisible text-white top-rt text-center text-xs font-semibold absolute z-10 rounded-hu xl:w-max lg:w-max md:w-max p-1.5 xl:ml-df lg:ml-df md:ml-df">
                 Click to book this ad</span>
             </div>
-            <div class="adtool bg-card rounded-kl hover:shadow-ff w-wk pt-wy pb-wh pl-wl">
+            <div
+              class="adtool xl:bg-card md:bg-card lg:bg-card rounded-kl hover:shadow-ff xl:w-wk md:w-wk lg:w-wk w-auto pt-wy  xl:pb-wh lg:pb-wh md:pb-wh xl:pl-wl lg:pl-wl md:pl-wl">
               <img src="/images/icon_shoutout.svg">
-              <p class="text-black font-semibold text-base pt-wy">indro Shoutout</p>
+              <p
+                class="xl:text-black lg:text-black md:text-black text-gray-add font-semibold xl:text-base lg:text-base md:text-base text-kl pt-wy">
+                indro Shoutout</p>
               <span
-                class="adtooltext px-2.5 after:absolute after:bottom-full after:border-solid after:left-ag after:-ml-ui after:border-13 after:left-ag bg-click invisible text-white top-rt text-center text-xs font-semibold absolute z-10 rounded-hu w-max p-1.5 ml-df">
+                class="adtooltext px-2.5 after:absolute after:bottom-full after:border-solid after:left-ag after:-ml-ui after:border-13 after:left-ag bg-click invisible text-white top-rt text-center text-xs font-semibold absolute z-10 rounded-hu xl:w-max lg:w-max md:w-max p-1.5 xl:ml-df lg:ml-df md:ml-df">
                 Click to book this ad</span>
             </div>
-            <div class="adtool bg-card rounded-kl hover:shadow-ff w-wk pt-wy pb-wh pl-wl">
+            <div
+              class="adtool xl:bg-card md:bg-card lg:bg-card rounded-kl hover:shadow-ff xl:w-wk md:w-wk lg:w-wk w-auto pt-wy  xl:pb-wh lg:pb-wh md:pb-wh xl:pl-wl lg:pl-wl md:pl-wl">
               <img src="/images/icon_explainer.svg">
-              <p class="text-black font-semibold text-base pt-wy">Explainer</p>
+              <p
+                class="xl:text-black lg:text-black md:text-black text-gray-add font-semibold xl:text-base lg:text-base md:text-base text-kl pt-wy">
+                Explainer</p>
               <span
-                class="adtooltext px-2.5 after:absolute after:bottom-full after:border-solid after:left-ag after:-ml-ui after:border-13 after:left-ag bg-click invisible text-white top-rt text-center text-xs font-semibold absolute z-10 rounded-hu w-max p-1.5 ml-df">
+                class="adtooltext px-2.5 after:absolute after:bottom-full after:border-solid after:left-ag after:-ml-ui after:border-13 after:left-ag bg-click invisible text-white top-rt text-center text-xs font-semibold absolute z-10 rounded-hu xl:w-max lg:w-max md:w-max p-1.5 xl:ml-df lg:ml-df md:ml-df">
                 Click to book this ad</span>
             </div>
-            <div class="adtool bg-card rounded-kl hover:shadow-ff w-wk pt-wy pb-wh pl-wl">
+            <div
+              class="adtool xl:bg-card md:bg-card lg:bg-card rounded-kl hover:shadow-ff xl:w-wk md:w-wk lg:w-wk w-auto pt-wy  xl:pb-wh lg:pb-wh md:pb-wh xl:pl-wl lg:pl-wl md:pl-wl">
               <img src="/images/icon_l_banner.svg">
-              <p class="text-black font-semibold text-base pt-wy">L Banner</p>
+              <p
+                class="xl:text-black lg:text-black md:text-black text-gray-add font-semiboldxl:text-base lg:text-base md:text-base text-kl pt-wy">
+                L Banner</p>
               <span
-                class="adtooltext px-2.5 after:absolute after:bottom-full after:border-solid after:left-ag after:-ml-ui after:border-13 after:left-ag bg-click invisible text-white top-rt text-center text-xs font-semibold absolute z-10 rounded-hu w-max p-1.5 ml-df">
+                class="adtooltext px-2.5 after:absolute after:bottom-full after:border-solid after:left-ag after:-ml-ui after:border-13 after:left-ag bg-click invisible text-white top-rt text-center text-xs font-semibold absolute z-10 rounded-hu xl:w-max lg:w-max md:w-max p-1.5 xl:ml-df lg:ml-df md:ml-df">
                 Click to book this ad</span>
             </div>
-            <div class="adtool bg-card rounded-kl hover:shadow-ff w-wk pt-wy pb-wh pl-wl">
+            <div
+              class="adtool xl:bg-card md:bg-card lg:bg-card rounded-kl hover:shadow-ff xl:w-wk md:w-wk lg:w-wk w-auto pt-wy  xl:pb-wh lg:pb-wh md:pb-wh xl:pl-wl lg:pl-wl md:pl-wl">
               <img src="/images/icon_logo.svg">
-              <p class="text-black font-semibold text-base pt-wy">Logo</p>
+              <p
+                class="xl:text-black lg:text-black md:text-black text-gray-add font-semibold xl:text-base lg:text-base md:text-base text-kl pt-wy">
+                Logo</p>
               <span
-                class="adtooltext px-2.5 after:absolute after:bottom-full after:border-solid after:left-ag after:-ml-ui after:border-13 after:left-ag bg-click invisible text-white top-rt text-center text-xs font-semibold absolute z-10 rounded-hu w-max p-1.5 ml-df">
+                class="adtooltext px-2.5 after:absolute after:bottom-full after:border-solid after:left-ag after:-ml-ui after:border-13 after:left-ag bg-click invisible text-white top-rt text-center text-xs font-semibold absolute z-10 rounded-hu xl:w-max lg:w-max md:w-max p-1.5 xl:ml-df lg:ml-df md:ml-df">
                 Click to book this ad</span>
             </div>
-            <div class="adtool bg-card rounded-kl hover:shadow-ff w-wk pt-wy pb-wh pl-wl">
+            <div
+              class="adtool xl:bg-card md:bg-card lg:bg-card rounded-kl hover:shadow-ff xl:w-wk md:w-wk lg:w-wk w-auto pt-wy  xl:pb-wh lg:pb-wh md:pb-wh xl:pl-wl lg:pl-wl md:pl-wl">
               <img src="/images/icon_wearables.svg">
-              <p class="text-black font-semibold text-base pt-wy">Wearables</p>
+              <p
+                class="xl:text-black lg:text-black md:text-black text-gray-add font-semibold xl:text-base lg:text-base md:text-base text-kl pt-wy">
+                Wearables</p>
               <span
-                class="adtooltext px-2.5 after:absolute after:bottom-full after:border-solid after:left-ag after:-ml-ui after:border-13 after:left-ag bg-click invisible text-white top-rt text-center text-xs font-semibold absolute z-10 rounded-hu w-max p-1.5 ml-df">
+                class="adtooltext px-2.5 after:absolute after:bottom-full after:border-solid after:left-ag after:-ml-ui after:border-13 after:left-ag bg-click invisible text-white top-rt text-center text-xs font-semibold absolute z-10 rounded-hu xl:w-max lg:w-max md:w-max p-1.5 xl:ml-df lg:ml-df md:ml-df">
                 Click to book this ad</span>
             </div>
-            <div class="adtool bg-card rounded-kl hover:shadow-ff w-wk pt-wy pb-wh pl-wl">
+            <div
+              class="adtool xl:bg-card md:bg-card lg:bg-card rounded-kl hover:shadow-ff xl:w-wk md:w-wk lg:w-wk w-auto pt-wy  xl:pb-wh lg:pb-wh md:pb-wh xl:pl-wl lg:pl-wl md:pl-wl">
               <img src="/images/icon_backdrop.svg">
-              <p class="text-black font-semibold text-base pt-wy">Display Propertise</p>
+              <p
+                class="xl:text-black lg:text-black md:text-black text-gray-add font-semibold xl:text-base lg:text-base md:text-base text-kl pt-wy">
+                Display Propertise</p>
               <span
-                class="adtooltext px-2.5 after:absolute after:bottom-full after:border-solid after:left-ag after:-ml-ui after:border-13 after:left-ag bg-click invisible text-white top-al text-center text-xs font-semibold absolute z-10 rounded-hu w-max p-1.5 ml-df">
+                class="adtooltext px-2.5 after:absolute after:bottom-full after:border-solid after:left-ag after:-ml-ui after:border-13 after:left-ag bg-click invisible text-white top-al text-center text-xs font-semibold absolute z-10 rounded-hu xl:w-max lg:w-max md:w-max p-1.5 xl:ml-df lg:ml-df md:ml-df">
                 Click to book this ad</span>
             </div>
 
-            <div class="adtool bg-card rounded-kl hover:shadow-ff w-wk pt-wy pb-wh pl-wl">
+            <div
+              class="adtool xl:bg-card md:bg-card lg:bg-card rounded-kl hover:shadow-ff xl:w-wk md:w-wk lg:w-wk w-auto pt-wy  xl:pb-wh lg:pb-wh md:pb-wh xl:pl-wl lg:pl-wl md:pl-wl">
               <img src="/images/icon_end_video.svg">
-              <p class="text-black font-semibold text-base pt-wy">End Video</p>
+              <p
+                class="xl:text-black lg:text-black md:text-black text-gray-add font-semibold xl:text-base lg:text-base md:text-base text-kl pt-wy">
+                End Video</p>
               <span
-                class="adtooltext px-2.5 after:absolute after:bottom-full after:border-solid after:left-ag after:-ml-ui after:border-13 after:left-ag bg-click invisible text-white top-al text-center text-xs font-semibold absolute z-10 rounded-hu w-max p-1.5 ml-df">
+                class="adtooltext px-2.5 after:absolute after:bottom-full after:border-solid after:left-ag after:-ml-ui after:border-13 after:left-ag bg-click invisible text-white top-al text-center text-xs font-semibold absolute z-10 rounded-hu xl:w-max lg:w-max md:w-max p-1.5 xl:ml-df lg:ml-df md:ml-df">
                 Click to book this ad</span>
             </div>
-            <div class="adtool bg-card rounded-kl hover:shadow-ff w-wk pt-wy pb-wh pl-wl">
+            <div
+              class="adtool xl:bg-card md:bg-card lg:bg-card rounded-kl hover:shadow-ff xl:w-wk md:w-wk lg:w-wk w-auto pt-wy  xl:pb-wh lg:pb-wh md:pb-wh xl:pl-wl lg:pl-wl md:pl-wl">
               <img src="/images/icon_end_shoutout.svg">
-              <p class="text-black font-semibold text-base pt-wy">End Shoutout</p>
+              <p
+                class="xl:text-black lg:text-black md:text-black text-gray-add font-semibold xl:text-base lg:text-base md:text-base text-kl pt-wy">
+                End Shoutout</p>
               <span
                 class="adtooltext px-2.5 after:absolute after:bottom-full after:border-solid after:left-ag after:-ml-ui after:border-13 after:left-ag bg-click invisible text-white top-al text-center text-xs font-semibold absolute z-10 rounded-hu w-max p-1.5 ml-df">
                 Click to book this ad</span>
@@ -173,7 +237,7 @@
         </div>
       </div>
     </div>
-    <div class="md:bg-black pt-jk">
+    <div class="md:bg-black xl:pt-jk md:pt-jk lg:pt-jk pt-6">
       <h1 class="hidden md:block text-white text-center font-bold text-gh">STATS</h1>
       <div
         class="hidden md:block xl:max-w-7xl lg:max-w-5xl md:max-w-2xl m-auto xl:grid-cols-16 lg:grid-cols-3 md:grid-cols-2 xl:grid md:grid lg:grid pt-jk pb-ty">
@@ -217,13 +281,13 @@
           <img class="py-yu" src="/images/arrow_1.svg">
         </div>
       </div>
-      <div class="bg-red py-jk relative">
-        <div class=" flex justify-center">
-          <h1 class="text-white text-center font-semibold text-2xl"> <span
+      <div class="bg-red xl:py-jk md:py-jk lg:py-jk pt-tg pb-2 relative px-tg md:px-0 xl:px-0 lg:px-0">
+        <div class="flex justify-center">
+          <h1 class="text-white text-center font-semibold xl:text-2xl md:text-2xl lg:text-2xl text-base"> <span
               class="h-1 border-b-4 border-blue">Lin</span>k
             to Everywhere</h1>
           <div
-            class="question relative inline-block cursor-pointer bg-white rounded-full w-op h-io p-1 text-red-dark text-sm text-center mt-2.5 ml-2.5 leading-3">
+            class="hidden lg:block md:block xl:block question relative inline-block cursor-pointer bg-white rounded-full w-op h-io p-1 text-red-dark text-sm text-center mt-2.5 ml-2.5 leading-3">
             ?
             <div
               class="question-text invisible w-wi bg-white rounded-kl p-3 absolute z-10 -top-28 left-as after:absolute after:right-full after:border-solid after:top-ad after:border-12">
@@ -279,57 +343,60 @@
             </a>
           </div>
         </div> -->
-        <div class="scroll-bar xl:absolute md:absolute lg:absolute xl:block lg:block md:block flex right-27 top-ya">
+        <div
+          class="scroll-bar xl:absolute md:absolute lg:absolute xl:block lg:block md:block flex right-27 top-ya justify-center xl:pt-0 md:pt-0 lg:pt-0 pt-jf">
           <a href="#">
-            <div class="tooltip relative">
+            <div class="hidden md:block tooltip relative">
               <img class="transition ease-in delay-150 hover:scale-125" src="/images/ph_facebook-logo-thin.svg">
               <span
                 class="tooltiptext invisible after:absolute after:top-rw after:left-full after:ml-ui after:border-12 after:border-solid after:-ml-px bg-white text-gray-fb text-center absolute z-10 p-2.5 rounded-lg -ml-24 bottom-0">Facebook</span>
             </div>
           </a>
           <a href="#">
-            <div class="xl:pt-jf lg:pt-jf md:pt-jf">
+            <div class="xl:pt-jf lg:pt-jf md:pt-jf xl:pl-0 lg:pl-0 md:pl-0 pl-jf">
               <img class="transition ease-in delay-150 hover:scale-125" src="/images/ph_youtube-logo-thin.svg">
             </div>
           </a>
           <a href="#">
-            <div class="xl:pt-jf lg:pt-jf md:pt-jf">
+            <div class="xl:pt-jf lg:pt-jf md:pt-jf xl:pl-0 lg:pl-0 md:pl-0 pl-jf">
               <img class="transition ease-in delay-150 hover:scale-125" src="/images/ph_twitter-logo-thin.svg">
             </div>
           </a>
           <a href="#">
-            <div class="xl:pt-jf lg:pt-jf md:pt-jf">
+            <div class="xl:pt-jf lg:pt-jf md:pt-jf xl:pl-0 lg:pl-0 md:pl-0 pl-jf">
               <img class="transition ease-in delay-150 hover:scale-125" src="/images/ph_spotify-logo-thin.svg">
             </div>
           </a>
           <a href="#">
-            <div class="xl:pt-jf lg:pt-jf md:pt-jf">
+            <div class="xl:pt-jf lg:pt-jf md:pt-jf xl:pl-0 lg:pl-0 md:pl-0 pl-jf">
               <img class="transition ease-in delay-150 hover:scale-125" src="/images/ph_linkedin-logo-thin.svg">
             </div>
           </a>
           <a href="">
-            <div class="xl:pt-jf lg:pt-jf md:pt-jf">
+            <div class="xl:pt-jf lg:pt-jf md:pt-jf xl:pl-0 lg:pl-0 md:pl-0 pl-jf">
               <img class="transition ease-in delay-150 hover:scale-125" src="/images/openmoji_instagram.svg">
             </div>
           </a>
         </div>
-        <div class="pt-kj flex justify-center">
+        <div class="xl:pt-kj md:pt-kj lg:pt-kj pt-9 flex justify-center">
           <div>
             <div
-              class="border border-solid border-white pt-3.5 pb-yk xl:w-gj md:w-gj lg:w-gj rounded-kl hover:bg-ref cursor-pointer">
-              <span class="text-sm text-white font-normal pl-rr">SHOP @ MY OFFICIAL STORE</span>
+              class="border border-solid border-white pt-3.5 px-rr pb-yk xl:w-gj md:w-gj lg:w-gj rounded-kl hover:bg-ref cursor-pointer">
+              <span class="text-sm text-white font-normal">SHOP @ MY OFFICIAL STORE</span>
             </div>
             <div
-              class="border border-solid border-white pt-3.5 xl:w-gj md:w-gj lg:w-gj pb-yk mt-jk rounded-kl hover:bg-ref cursor-pointer">
-              <span class="text-sm text-white font-normal pl-rr">EQUIPMENTS I HAVE USED FOR CONTENT CREATION</span>
+              class="border border-solid border-white px-rr pt-3.5 xl:w-gj md:w-gj lg:w-gj pb-yk mt-jk rounded-kl hover:bg-ref cursor-pointer">
+              <span
+                class="text-sm text-white font-normal truncate xl:w-auto lg:w-auto md:w-auto w-rt inline-block">EQUIPMENTS
+                I HAVE USED FOR CONTENT CREATION</span>
             </div>
             <div
-              class="border border-solid border-white pt-3.5 xl:w-gj md:w-gj lg:w-gj pb-yk mt-jk rounded-kl hover:bg-ref cursor-pointer">
-              <span class="text-sm text-white font-normal pl-rr">CHARITY FOR CHELDRENS</span>
+              class="border border-solid border-white px-rr pt-3.5 xl:w-gj md:w-gj lg:w-gj pb-yk mt-jk rounded-kl hover:bg-ref cursor-pointer">
+              <span class="text-sm text-white font-normal">CHARITY FOR CHELDRENS</span>
             </div>
             <div
-              class="link-con commontool relative border border-solid border-white xl:w-gj md:w-gj lg:w-gj pt-3.5 pb-yk mt-jk rounded-kl hover:bg-ref flex hover:underline text-white cursor-pointer">
-              <span class="text-sm text-white font-normal pl-rr pr-tr">SPECIAL THANKS TO PickMyAD...JOIN
+              class="link-con commontool relative border px-rr border-solid border-white xl:w-gj md:w-gj lg:w-gj pt-3.5 pb-yk mt-jk rounded-kl hover:bg-ref flex hover:underline text-white cursor-pointer">
+              <span class="text-sm text-white font-normal pr-tr">SPECIAL THANKS TO PickMyAD...JOIN
                 NOW</span>
               <a href=""><svg xmlns="http://www.w3.org/2000/svg" class="link h-io w-op font-normal" viewBox="0 0 20 20"
                   fill="white">
@@ -343,11 +410,17 @@
             </div>
           </div>
         </div>
+        <div
+          class="xl:hidden md:hidden lg:hidden border-b-13 border-white border-solid mt-8 rounded-kl max-w-re mx-auto">
+        </div>
       </div>
-      <div class="bg-bla pt-jk relative">
-        <h1 class="text-white text-center font-bold text-gh">Latest Videos</h1>
-        <div class="container xl:max-w-7xl lg:max-w-5xl md:max-w-2xl pt-jk m-auto">
-          <div class="grid xl:grid-cols-17 xl:grid-rows-17 md:grid-cols-15 md:grid-cols-15 xl:gap-11 md:gap-11 lg:gap-11 gap-2.5 grid-cols-2">
+      <div class="bg-bla xl:pt-jk md:pt-jk lg:pt-jk pt-7 relative">
+        <h1 class="text-white text-center font-bold  xl:text-gh md:text-gh lg:text-gh text-yu">Latest Videos</h1>
+      
+        <div
+          class="container xl:max-w-7xl lg:max-w-5xl md:max-w-2xl xl:pt-jk md:pt-jk lg:pt-jk pt-7 m-auto xl:px-0 md:px-0 lg:px-0 px-tg">
+          <div
+            class="grid xl:grid-cols-17 xl:grid-rows-17 md:grid-cols-15 md:grid-cols-15 xl:gap-11 md:gap-11 lg:gap-11 gap-2.5 grid-cols-2">
             <div
               class="profile-pic relative inline-block xl:col-start-1 lg:col-start-1 md:col-start-1 xl:col-end-1 md:col-end-1 lg:col-end-1 xl:row-start-1 md:row-start-1 lg:row-start-1 lg:row-end-6 md:row-end-6 xl:row-end-6 hover:shadow-gh ease-out duration-300 transition delay-150">
               <img src="/images/maxresdefault (1).jpg" class="rounded-kl w-full h-full">
@@ -390,13 +463,16 @@
           </div>
         </div>
         <a href="#">
-          <div class="pt-20 text-center">
+          <div class="xl:pt-20 lg:pt-20 md:pt-20 pt-jf text-center">
             <span class="text-white font-semibold text-base bg-red rounded-full px-lo py-3">View All</span>
           </div>
         </a>
-        <h1 class="text-white text-center font-bold text-gh pt-ds">My projects</h1>
-        <div class="container xl:max-w-7xl lg:max-w-5xl md:max-w-2xl pt-jk m-auto">
-          <div class="grid xl:grid-cols-17 xl:grid-rows-17 md:grid-cols-15 md:grid-cols-15 xl:gap-11 md:gap-11 lg:gap-11 gap-2.5 p-2.5 grid-cols-2">
+        <h1
+          class="text-white text-center font-bold xl:text-gh md:text-gh lg:text-gh text-yu xl:pt-ds lg:pt-ds md:pt-ds pt-tc">
+          My projects</h1>
+        <div class="container xl:max-w-7xl lg:max-w-5xl md:max-w-2xl xl:pt-jk md:pt-jk lg:pt-jk pt-7 m-auto">
+          <div
+            class="grid xl:grid-cols-17 xl:grid-rows-17 md:grid-cols-15 md:grid-cols-15 xl:gap-11 md:gap-11 lg:gap-11 gap-2.5 p-2.5 grid-cols-2 xl:px-0 lg:px-0 md:px-0 px-tg">
             <div
               class="xl:col-start-1 lg:col-start-1 md:col-start-1 xl:col-end-1 md:col-end-1 lg:col-end-1 xl:row-start-1 md:row-start-1 lg:row-start-1 lg:row-end-6 md:row-end-6 xl:row-end-6">
               <iframe class="rounded-kl w-full h-full bg-gri"></iframe>
@@ -429,12 +505,17 @@
             <img src="/images/graph.svg">
           </div>
         </div>
-        <div class="xl:max-w-7xl lg:max-w-5xl md:max-w-2xl m-auto">
-          <h1 class="text-white font-semibold text-xl pt-ti"> <span class="h-1 border-b-4 border-blue">Oth</span>ers
-            Channels</h1>
-          <div class="xl:grid-cols-16 lg:grid-cols-3 md:grid-cols-2 grid pt-lo gap-5 max-w-max">
-            <div class="box border border-solid border-blu rounded-kl w-ds p-2.5 hover:shadow-fg ease-out duration-300">
-              <div class="md:flex relative w-full mr-auto pr-0 z-10 text-white">
+        <div class="xl:max-w-7xl lg:max-w-5xl md:max-w-2xl m-auto xl:px-0 md:px-0 lg:px-0 px-tg">
+          <h1
+            class="text-white font-semibold text-xl xl:pt-ti md:pt-ti lg:pt-ti pt-lj xl:text-justify md:text-justify lg:text-justify text-center">
+            <span class="h-1 border-b-4 border-blue">Oth</span>ers
+            Channels
+          </h1>
+          <div
+            class="xl:grid-cols-16 lg:grid-cols-3 md:grid-cols-2 grid pt-lo gap-5 xl:max-w-max md:max-w-max lg:max-w-max">
+            <div
+              class="box border border-solid border-blu rounded-kl xl:w-ds lg:w-ds md:w-ds w-full p-2.5 hover:shadow-fg ease-out duration-300">
+              <div class="flex relative w-full mr-auto pr-0 z-10 text-white">
                 <img class="" src="/images/profile.png" width="45" height="45">
                 <div class="pt-1 pl-2.5 text-center md:text-left">
                   <div class="flex">
@@ -455,8 +536,9 @@
               </div>
               <p class="text-jh font-normal text-blue-dark">Subscribers</p>
             </div>
-            <div class="box border border-solid border-blu rounded-kl w-ds p-2.5 hover:shadow-fg ease-out duration-300">
-              <div class="md:flex relative w-full mr-auto pr-0 z-10 text-white">
+            <div
+              class="box border border-solid border-blu rounded-kl xl:w-ds lg:w-ds md:w-ds w-full p-2.5 hover:shadow-fg ease-out duration-300">
+              <div class="flex relative w-full mr-auto pr-0 z-10 text-white">
                 <img class="" src="/images/profile.png" width="45" height="45">
                 <div class="pt-1 pl-2.5 text-center md:text-left">
                   <div class="flex">
@@ -477,8 +559,9 @@
               </div>
               <p class="text-jh font-normal text-blue-dark">Subscribers</p>
             </div>
-            <div class="box border border-solid border-blu rounded-kl w-ds p-2.5 hover:shadow-fg ease-out duration-300">
-              <div class="md:flex relative w-full mr-auto pr-0 z-10 text-white">
+            <div
+              class="box border border-solid border-blu rounded-kl xl:w-ds lg:w-ds md:w-ds w-full p-2.5 hover:shadow-fg ease-out duration-300">
+              <div class="flex relative w-full mr-auto pr-0 z-10 text-white">
                 <img class="" src="/images/profile.png" width="45" height="45">
                 <div class="pt-1 pl-2.5 text-center md:text-left">
                   <div class="flex">
@@ -500,21 +583,21 @@
               <p class="text-jh font-normal text-blue-dark">Subscribers</p>
             </div>
           </div>
-          <div class="pt-to">
+          <div class="xl:pt-to lg:pt-to md:pt-to pt-sq">
             <span class="text-gray-light font-semibold text-base">SOUNDS EXCITED ?</span>
-            <h1 class="text-white font-bold text-gh">
+            <h1 class="text-white font-bold text-ds xl:text-gh md:text-gh lg:text-gh">
               Let us know if you are trying reach them
             </h1>
-            <div class="xl:flex lg:flex pt-uo">
+            <div class="xl:flex lg:flex xl:pt-uo md:pt-uo lg:pt-uo pt-tg">
               <div class="">
                 <p class="text-base font-semibold text-gray-light">Name</p>
-                <div class="bg-name rounded-kl p-2.5 mt-2.5 xl:w-kj lg:w-kj md:kj">
+                <div class="bg-name rounded-kl p-2.5 mt-2.5 xl:w-kj lg:w-kj md:kj w-full">
                   <span class="text-gray-you font-normal text-base">Your Full name</span>
                 </div>
               </div>
-              <div class="xl:pl-tg lg:pl-tg">
+              <div class="xl:pl-tg lg:pl-tg xl:pt-0 lg:pt-0 md:pt-0 pt-tg">
                 <p class="text-base font-semibold text-gray-light">Company name</p>
-                <div class="bg-name rounded-kl p-2.5 mt-2.5  xl:w-kj lg:w-kj md:kj">
+                <div class="bg-name rounded-kl p-2.5 mt-2.5  xl:w-kj lg:w-kj md:kj w-full">
                   <span class="text-gray-you font-normal text-base">your brand/company name </span>
                 </div>
               </div>
@@ -522,13 +605,13 @@
             <div class="xl:flex lg:flex pt-tg">
               <div class="">
                 <p class="text-base font-semibold text-gray-light">Email</p>
-                <div class="bg-name rounded-kl p-2.5 mt-2.5  xl:w-kj lg:w-kj md:kj">
+                <div class="bg-name rounded-kl p-2.5 mt-2.5  xl:w-kj lg:w-kj md:kj w-full">
                   <span class="text-gray-you font-normal text-base">Enter a valid email ID</span>
                 </div>
               </div>
-              <div class="xl:pl-tg lg:pl-tg">
+              <div class="xl:pl-tg lg:pl-tg xl:pt-0 lg:pt-0 md:pt-0 pt-tg">
                 <p class="text-base font-semibold text-gray-light">Mobile number</p>
-                <div class="bg-name rounded-kl p-2.5 mt-2.5  xl:w-kj lg:w-kj md:kj">
+                <div class="bg-name rounded-kl p-2.5 mt-2.5  xl:w-kj lg:w-kj md:kj w-full">
                   <span class="text-gray-you font-normal text-base">Enter a Mobile number</span>
                 </div>
               </div>
@@ -539,15 +622,14 @@
               </div>
               <a href="#">
                 <div
-                  class="xl:pl-za lg:pl-8 lg:pt-0 xl:-mt-2.5 lg:-mt-2.5 pt-2.5 text-center xl:text-justify lg:text-justify">
+                  class="xl:pl-za lg:pl-8 lg:pt-0 md:pt-rf xl:pt-0 xl:-mt-2.5 lg:-mt-2.5 pt-rf text-center xl:text-justify lg:text-justify">
                   <span
                     class="block text-white font-semibold text-base bg-red rounded-full xl:px-lo py-3 lg:px-5 px-6">BOOK
                     SLOT</span>
                 </div>
               </a>
             </div>
-            <div
-              class="xl:hidden lg:hidden  block xl:pl-zc lg:pl-8 xl:-mt-7 mt-2.5 text-center xl:text-justify lg:text-justify">
+            <div class="xl:hidden lg:hidden block mt-7 text-center">
               <span class="inline-block border-l border-solid border-or h-5 ml-2.5"></span><br>
               <span class="text-white font-normal text-xl">OR</span><br>
               <span class="inline-block border-l border-solid border-or h-5 ml-2.5 mt-1.5"></span>
@@ -560,12 +642,31 @@
             </a>
           </div>
         </div>
-        <div class="bg-foo w-full mt-40">
+        <div class="bg-foo w-full xl:mt-40 lg:mt-40 mt-24">
           <span class="text-white font-normal text-base m-auto table py-6">© PickMyAd Pvt All rights received</span>
         </div>
       </div>
     </div>
   </section>
+
+  <script>
+    var modal = document.getElementById("myModal");
+    var btn = document.getElementById("myBtn");
+    var span = document.getElementsByClassName("close")[0];
+    btn.onclick = function () {
+      modal.style.display = "block";
+    }
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
+
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+
 </body>
 
 
