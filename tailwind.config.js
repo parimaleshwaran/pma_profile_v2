@@ -91,6 +91,7 @@ module.exports = {
         'span-17': 'span 16',
         'span-14': 'span 3',
         'span-9': 'span 14',
+        'span-7': 'sapn 13'
       },
       padding: {
         st: '87px',
@@ -175,7 +176,7 @@ module.exports = {
         wi: '227px',
         we: '120px',
         wk: '184.4px',
-        rt: '295px',
+        rt: '255px',
         im: '100px',
         fd: '226px'
       },
