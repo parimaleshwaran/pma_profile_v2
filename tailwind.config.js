@@ -137,7 +137,9 @@ module.exports = {
         ui: '5px',
         qw: '-60px',
         wq: '-19px',
-        ql: '100px'
+        ql: '100px',
+        ds: '13px',
+        rt: '4.8px'
       },
       inset: {
         21: '50px',
