@@ -513,6 +513,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   top: 8rem;
 }
 
+.right-hy {
+  right: 15px;
+}
+
+.top-gt {
+  top: 19px;
+}
+
 .top-az {
   top: 105%;
 }
@@ -754,6 +762,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 18px;
 }
 
+.h-tv {
+  height: 11px;
+}
+
 .h-hj {
   height: 52px;
 }
@@ -782,12 +794,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 15.4px;
 }
 
-.w-fd {
-  width: 226px;
-}
-
 .w-op {
   width: 18px;
+}
+
+.w-tv {
+  width: 11px;
+}
+
+.w-fd {
+  width: 226px;
 }
 
 .w-im {
@@ -858,6 +874,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.flex-row {
+  flex-direction: row;
 }
 
 .flex-col {
@@ -1190,6 +1210,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pt-1 {
   padding-top: 0.25rem;
+}
+
+.pt-sf {
+  padding-top: 3px;
 }
 
 .pt-12 {
@@ -1711,6 +1735,21 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-left: -140px;
 } */
 
+.placeholder\:text-gray-you::-moz-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(106 105 108 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-gray-you:-ms-input-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(106 105 108 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-gray-you::placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(106 105 108 / var(--tw-text-opacity));
+}
+
 .after\:absolute::after {
   content: var(--tw-content);
   position: absolute;
@@ -2058,10 +2097,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:pt-uo {
     padding-top: 47px;
-  }
-
-  .md\:pt-0 {
-    padding-top: 0px;
   }
 
   .md\:pt-rf {

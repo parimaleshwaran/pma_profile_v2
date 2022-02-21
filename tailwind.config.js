@@ -162,7 +162,9 @@ module.exports = {
         al: '86%',
         rt: '55%',
         rw: '28%',
-        ya: '60px'
+        ya: '60px',
+        hy: '15px',
+        gt: '19px'
       },
       width: {
         jj: '15.4px',
@@ -180,22 +182,22 @@ module.exports = {
         wk: '184.4px',
         rt: '255px',
         im: '100px',
-        fd: '226px'
+        fd: '226px',
+        tv: '11px'
       },
       borderWidth: {
         DEFAULT: '1px',
         11: '5px',
         12: '10px',
         13: '6px'
-
       },
       height: {
         jk: '15.4px',
         hj: '52px',
         io: '18px',
         ui: '90%',
-        po: '78px'
-
+        po: '78px',
+        tv: '11px'
       },
       borderRadius: {
         kl: '5px',
