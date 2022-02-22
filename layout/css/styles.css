@@ -674,8 +674,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: -3rem;
 }
 
+.-ml-8 {
+  margin-left: -2rem;
+}
+
 .-ml-24 {
   margin-left: -6rem;
+}
+
+.-ml-20 {
+  margin-left: -5rem;
 }
 
 .mt-jk {
