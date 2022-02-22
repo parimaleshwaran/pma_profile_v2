@@ -164,7 +164,8 @@ module.exports = {
         rw: '28%',
         ya: '60px',
         hy: '15px',
-        gt: '19px'
+        gt: '19px',
+        rf: '5px'
       },
       width: {
         jj: '15.4px',
