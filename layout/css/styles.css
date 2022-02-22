@@ -2661,6 +2661,14 @@ Ensure the default browser behavior of the `hidden` attribute.
     gap: 30px;
   }
 
+  .xl\:overflow-visible {
+    overflow: visible;
+  }
+
+  .xl\:whitespace-normal {
+    white-space: normal;
+  }
+
   .xl\:border-b-4 {
     border-bottom-width: 4px;
   }
